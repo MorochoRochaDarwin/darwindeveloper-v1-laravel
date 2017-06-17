@@ -1,0 +1,363 @@
+/*custom fonts*/
+
+@font-face {
+    font-family: 'arialrounded'; /*a name to be used later*/
+    src: url('../fonts/taylor-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'digital'; /*a name to be used later*/
+    src: url('../fonts/digitaldreames.otf'); /*URL to font*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f4f5fc;
+}
+
+
+#left{
+    top: -70px;
+}
+
+.dsmr-card{
+    background-color: white;
+    color: #0D3349;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 14px;
+}
+
+
+
+.badge-ok {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #00A9D5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.badge-no-ok {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #f3565d;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.tooltip.in {
+    opacity: 1;
+    filter: alpha(opacity=100);
+
+}
+
+.tooltip.bottom .tooltip-inner {
+    max-width: 310px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #00B0E8;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+
+
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 11px;
+    font-size: 16px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}
+
+footer {
+    padding: 20px;
+    background: #085b81;
+    text-align: center;
+    color: white;
+}
+
+footer b {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.list-darwin{
+    padding: 0;
+    margin: 0;
+}
+
+
+.list-darwin li{
+    float: left;
+    list-style: none;
+    padding: 4px;
+    max-width: 10%;
+}
+
+.list-darwin li a img{
+    width: 100%;
+}
+
+/*nav style*/
+
+#dsmr-header {
+    width: 100%;
+    background: white;
+    min-height: 40px;
+}
+
+#top-header {
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    color: #0875B0;
+    display: none;
+}
+
+#top-header h1 {
+    /* padding: arriba  derecha abajo izquierda */
+    padding: 10px 10px 5px 10px;
+    margin: 0;
+    color: #0875B0;
+    font-family: digital;
+    font-size: 17px;
+}
+
+#top-header p {
+    float: right;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#dsmr-header nav {
+    width: 100%;
+    min-height: 40px;
+    height: auto;
+    clear: right;
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+}
+
+#dsmr-header nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#dsmr-header nav li {
+    float: left;
+    list-style: none;
+}
+
+#dsmr-header nav li a {
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    color: #085b81;
+    padding: 10px 10px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-family: arialrounded;
+
+}
+
+#dsmr-header nav li a:hover {
+    background: #085b81;
+    color: #fff;
+    animation-name: hover-animation;
+    animation-duration: 0.5s;
+}
+
+
+#dsmr-header nav li a.active {
+    background: #085b81;
+    color: #fff;
+}
+
+/*form search*/
+#form-busq {
+    max-width: 300px;
+    float: right;
+    padding-top: 8px;
+
+}
+
+#form-busq form input[type="text"] {
+    border-radius: 10px;
+    padding: 2px 15px;
+    background: #085b81;
+    border: none;
+    color: #00c0ef;
+    display: inline-block;
+    width: 150px;
+    -webkit-transition: width .35s ease-in-out;
+    -moz-transition: width .35s ease-in-out;
+
+    transition: width .35s ease-in-out;
+}
+
+#form-busq form input[type="text"]:hover, #form-busq form input[type="text"]:focus {
+    width: 200px;
+}
+
+#form-busq ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #A4E4EB;
+}
+
+#form-busq ::-moz-placeholder { /* WebKit, Blink, Edge */
+    color: #A4E4EB;
+}
+
+#form-busq :-ms-input-placeholder { /* WebKit, Blink, Edge */
+    color: #A4E4EB;
+}
+
+#form-busq button {
+    background: transparent;
+    color: #085b81;
+    border: none;
+}
+
+.dv {
+    width: 10px;
+    position: relative;
+}
+
+#anim-user {
+    font-size: 17px;
+    margin-left: 4px;
+    color: #085b81;
+    float: right;
+    padding: 8px;
+    text-decoration: none;
+    font-family: arialrounded;
+}
+
+#anim-user:hover {
+    background: #085b81;
+    color: #fff;
+    animation-name: hover-animation;
+    animation-duration: 0.5s;
+}
+
+#anim-user2 {
+    display: none;
+}
+
+#anim-user span {
+    width: 0px;
+
+    -webkit-transition: width .35s ease-in-out;
+    -moz-transition: width .35s ease-in-out;
+
+    transition: width .35s ease-in-out;
+}
+
+#anim-user:hover span {
+    width: auto;
+}
+
+/* Standard syntax */
+@keyframes hover-animation {
+    from {
+        background-color: #085b81;
+        color: #085b81;
+    }
+    to {
+        background-color: #085b81;
+        color: #fff;
+    }
+}
+
+.nav-toggle {
+    display: none;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.circle-btn:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+
+}
+
+@media screen and (min-width: 1300px) {
+    #form-busq form input[type="text"] {
+        border-radius: 10px;
+        padding: 2px 15px;
+        background: #085b81;
+        border: none;
+        color: #00c0ef;
+        display: inline-block;
+        width: 180px;
+        -webkit-transition: width .35s ease-in-out;
+        -moz-transition: width .35s ease-in-out;
+        font-size: small;
+        transition: width .35s ease-in-out;
+    }
+
+    #form-busq form input[type="text"]:hover, #form-busq form input[type="text"]:focus {
+        width: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    #form-busq {
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,316 @@
+#header {
+    position: relative;
+    padding: 0px;
+}
+
+#header .htop {
+    background: #fff;
+}
+
+#header .header-row {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+#header .header-row .inner {
+    padding: 0;
+}
+
+#header #logo img {
+    display: inline-block !important;
+}
+
+#header ul, #header ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.table-container {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table-container .col-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+/**===== 3.1. Language & Currency =====**/
+#language, #currency {
+    float: left;
+    border-right: 1px dotted #5b9ad4;
+}
+
+#language span, #currency span {
+    color: #0D3349;
+    font-size: 12px;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+#top .dropdown-menu {
+    margin: 0;
+    border-radius: 0px;
+    padding: 0;
+    border: none;
+    z-index: 1013;
+}
+
+#top .dropdown-menu li a, #currency ul li .currency-select, #language ul li .language-select {
+    color: #333;
+    padding: 7px 10px;
+    text-align: left;
+    font-size: 12px;
+}
+
+#top .dropdown-menu li + li a, #currency ul li + li .currency-select, #language ul li + li .language-select {
+    border-top: 1px solid #eee;
+}
+
+#my_account:hover > a:after, #language:hover span:after, #currency:hover span:after, #header .links > ul > li.wrap_custom_block:hover > a:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    z-index: 1014;
+    border-width: 0px 7px 6px 7px;
+    bottom: 0px;
+    left: 50%;
+    margin: 0 0 0 -5px;
+
+}
+
+#header .links > ul > li.wrap_custom_block:hover > a:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    z-index: 1014;
+    border-width: 0px 7px 6px 7px;
+    bottom: 0px;
+    left: 50%;
+    margin: 0 0 0 -5px;
+}
+
+#language button .btn-link {
+    border: none 0px;
+}
+
+#header .links > ul > li.wrap_custom_block > a b {
+    clear: both;
+    content: ' ';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 4px 5px 0px 5px;
+    margin: 0 0 1px 0;
+}
+
+#language img {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#top .dropdown-menu li a:hover, #currency ul li .currency-select:hover, #language ul li .language-select:hover {
+    color: #085b81;
+    background: none;
+    text-decoration: none;
+}
+
+/**===== 3.2. Top Links =====**/
+#header .links {
+    position: relative;
+    float: left;
+    border-right: 1px dotted #5b9ad4;
+}
+
+#header .links > ul > li {
+    float: left;
+    list-style-type: none;
+    border-left: 1px dotted #5b9ad4;
+}
+
+#header .links > ul > li.mobile, #header .links > ul > li.email {
+    color: #fff;
+}
+
+#header .links > ul > li.mobile {
+    padding: 0 10px;
+}
+
+#header .links > ul > li > a, #header .links > ul > li .wrap_custom_block > a {
+    padding: 0px 10px;
+    color: #085b81;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+}
+
+#language .btn-link, #currency .btn-link {
+    padding: 0px 10px;
+    border: none;
+}
+
+#header .links > ul > li.wrap_custom_block {
+    position: relative;
+}
+
+#header .links > ul > li.wrap_custom_block > div {
+    display: none;
+    background: #fff;
+    position: absolute;
+    z-index: 1015;
+    top: 35px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#header .links > ul > li.wrap_custom_block > a b {
+    margin-left: 3px;
+}
+
+#header .links > ul > li.wrap_custom_block > a:hover {
+    text-decoration: none;
+}
+
+#header .links > ul > li.wrap_custom_block > div ul li {
+    list-style-type: none;
+}
+
+#header #top-links > ul > li {
+    float: left;
+    border-left: 1px dotted #5b9ad4;
+}
+
+#header #top-links > ul > li > a {
+    color: #085b81;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+
+#header #top .links > ul > li, #header #top-links > ul > li, #language .btn-link span, #currency .btn-link span {
+    line-height: 35px;
+}
+
+#header #top-links > ul > li > a:hover, #header .links > ul > li > a:hover,#header .links > ul > li > a.active {
+
+    background-color: #085b81;
+    color: #fff;
+}
+
+.wrapper-box #header #top-links {
+    border-right: none;
+}
+
+.wrapper-box .htop .main-wrapper {
+    max-width: 1220px;
+    padding: 0;
+}
+
+/**===== 3.4. Search Bar =====**/
+#header #search {
+    position: relative;
+    display: block;
+}
+
+#header .button-search {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    float: right;
+    background: none;
+    border: none;
+    color: #bbb;
+    padding: 0;
+}
+
+#header #search input {
+    background: #FFF;
+    padding: 0 36px 0 10px;
+    height: 36px;
+    font-size: 13px;
+    color: #333;
+    outline: none;
+    display: block;
+    border-radius: 0px;
+}
+
+#header #search input:focus {
+    border-color: #bbb;
+    box-shadow: none;
+}
+
+#header.style2 #logo {
+    text-align: center;
+}
+
+#header.style2 #logo a img {
+    display: inline-block;
+}
+
+#header.style2 #cart {
+    text-align: left;
+}
+
+#header.style2 #cart .dropdown-menu {
+    left: 0;
+    right: auto;
+}
+
+@media screen and (max-width: 830px) {
+
+    nav#top .links {
+        top: 40px;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        position: fixed;
+        overflow: auto;
+        transition: all 0.3s cubic-bezier(.87, -.41, .19, 1.44);
+        background: #fff;
+        z-index: 999;
+    }
+
+    nav#top #main-nav div.open {
+        width: 200px;
+        z-index: 999;
+    }
+
+    nav#top .links li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .nav-toggle {
+        color: #0D3349;
+        display: inline;
+        border: none;
+    }
+
+}

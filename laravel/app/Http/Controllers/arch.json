@@ -1,0 +1,35 @@
+[
+  {
+    "categoria": "Android",
+    "libros": [
+      {
+        "id": 6,
+        "titulo": "jquery3",
+        "portada": "\/uploads\/338e50d1e3dca58aa7d42801ba58a240.png"
+      },
+      {
+        "id": 8,
+        "titulo": "libro de css",
+        "portada": "\/uploads\/4792dd59daf3d15e1cf92917a3a70543.png"
+      }
+    ]
+  },
+  {
+    "categoria": "jQuery",
+    "libros": []
+  },
+  {
+    "categoria": "Laravel",
+    "libros": [
+      {
+        "id": 7,
+        "titulo": "Nuevo en laravel",
+        "portada": "\/uploads\/68e9ea05029638954ee1dc8489822a4c.png"
+      }
+    ]
+  },
+  {
+    "categoria": "PHP",
+    "libros": []
+  }
+]
